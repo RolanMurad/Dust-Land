@@ -1,0 +1,13 @@
+/node_modules
+/package-lock.json
+/instruction.txt
+/layout-nuances.css
+/path to plugins.txt
+/.vscode
+/.gulpfile.js
+src/components
+/fonts
+/src/images
+
+
+
