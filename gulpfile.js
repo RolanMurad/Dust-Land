@@ -8,12 +8,12 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 const del = require('del');
-const imagewebp = require('gulp-webp');
+// const imagewebp = require('gulp-webp');
 const fileinclude = require('gulp-file-include'); 
 const plumber = require('gulp-plumber'); 
 const notify = require('gulp-notify'); 
 const gcmq = require('gulp-group-css-media-queries');
-const webpHTML = require('gulp-webp-html');
+// const webpHTML = require('gulp-webp-html');
 
 
 //!Html INCLUDE
@@ -26,7 +26,7 @@ function html() {
       }))
     }))
     .pipe(fileinclude())
-    .pipe(webpHTML())
+    // .pipe(webpHTML())
     .pipe(dest('dist/')) 
     .pipe(browserSync.stream())
 }
@@ -71,7 +71,7 @@ function scripts() {
     'node_modules/jquery/dist/jquery.js',//!Jquery Library
     // 'node_modules/slick-carousel/slick/slick.js',//!Slick-slider
     // 'node_modules/mixitup/dist/mixitup.js',//!MixitUp
-    // 'node_modules/@fancyapps/ui/dist/fancybox.umd.js',//!Fancybox-popup
+    'node_modules/@fancyapps/ui/dist/fancybox.umd.js',//!Fancybox-popup
     'src/js/jquery-scripts.js',
   ])
     .pipe(plumber({
@@ -97,7 +97,7 @@ function images() {
       }))
     }))
     .pipe(newer('dist/images'))
-    .pipe(imagewebp())
+    // .pipe(imagewebp())
     .pipe(dest('dist/images'))
     .pipe(src('src/images/**/*'))
     .pipe(newer('dist/images'))

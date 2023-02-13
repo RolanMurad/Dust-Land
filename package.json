@@ -27,5 +27,8 @@
     "gulp-webp-html": "^1.0.2",
     "jquery": "^3.6.1",
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.31"
   }
 }
