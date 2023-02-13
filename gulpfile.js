@@ -14,7 +14,6 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify'); 
 const gcmq = require('gulp-group-css-media-queries');
 const webpHTML = require('gulp-webp-html');
-var webpCss = require('gulp-webp-css');
 
 
 //!Html INCLUDE
@@ -46,7 +45,6 @@ function styles() {
       outputStyle: 'compressed' 
     }))
     .pipe(concat('style.min.css')) 
-    .pipe(webpCss())
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 version'],
       grid: true
