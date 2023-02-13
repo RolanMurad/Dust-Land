@@ -1,21 +1,105 @@
 //!Header
 .header {
-  padding: 20px 0;
-  background-color: rgba(0, 119, 134, 0.651);
+  padding: 24px 0 24px;
+  background-color: #08090C;
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: first start;
     align-items: center;
+    max-width: 1320px;
+    gap: 200px;
   }
 }
+
 //!Navbar
 .nav__list {
   display: flex;
   align-items: center;
 
-  &-item:not(:last-child) {
-    margin-right: 20px;
+  &-item {
+    flex-shrink: 0;
+    position: relative;
+
+    a {
+      font-family: 'Syne';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      position: relative;
+      padding: 12px 38px 10px 18px;
+      border-top: 1px solid #808692;
+      border-bottom: 1px solid #808692;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: #9E3DFF;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../images/left-arrow.svg);
+        top: -2.5px;
+        left: -24.5px;
+        width: 24.5px;
+        height: 50px;
+      }
+    }
+  }
+
+  // &-arrow {
+  //   position: absolute;
+  //   transform: rotate(-180deg);
+  //   left: -24.5px;
+  //   top: -2.5px;
+  //   width: 25px;
+  //   height: 48.3px;
+  // }
+
+  // &-arrow path {
+  //   fill: #08090C;
+  // }
+
+  &-item:last-child {
+    flex-shrink: 0;
+
+    a {
+      background: #FF8E3D;
+      box-shadow: (0px 4px 100px #FF8E3D);
+      border: none;
+      padding: 13px 23px 11px 23px;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        box-shadow: (0px 4px 100px #9E3DFF);
+        color: #9E3DFF;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: url(../images/right-color-arrow.svg);
+        right: -24.5px;
+        transform: rotate(-180deg);
+        top: 0px;
+        width: 25px;
+        height: 48px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../images/right-color-arrow.svg);
+        left: -24.5px;
+        top: 0px;
+        width: 25px;
+        height: 48px;
+      }
+    }
   }
 }
 
