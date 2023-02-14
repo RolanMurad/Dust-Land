@@ -2176,6 +2176,86 @@ body {
   z-index: 100 !important;
 }
 
+.section__experience {
+  position: relative;
+  padding: 110px 0 75px;
+}
+
+.section__experience::after {
+  content: "";
+  position: absolute;
+  background: url(../images/section-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.experience__title {
+  margin-bottom: 30px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.experience__carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.experience__carousel-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.experience__carousel-info {
+  margin-top: 100px;
+  max-width: 626px;
+  margin-right: 50px;
+}
+
+.experience__carousel-title {
+  margin-bottom: 20px;
+  text-align: end;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 0px 100px rgba(255,255,255,.4);
+}
+
+.experience__color-text {
+  color: #ff8126;
+}
+
+.experience__carousel-descr {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 0px 100px rgba(255,255,255,.4);
+}
+
 @media all and (min-width: 1024px) {
   .fancybox__container {
     --carousel-button-width: 48px;

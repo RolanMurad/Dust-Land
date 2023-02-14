@@ -46,7 +46,7 @@ $(function () {
   });
 
   //!Experience-slider
-  $('.faction__slider').slick({
+  $('.experience__carousel').slick({
     //!Main settings
     dots: true,
     autoplay: true,
