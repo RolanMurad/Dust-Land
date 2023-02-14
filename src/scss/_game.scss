@@ -131,25 +131,7 @@
       height: 123px;
     }
   }
-
-  &__item-link {
-    padding: 12px 68px;
-    display: inline-block;
-    background: url(../images/award-bg.svg);
-    background-repeat: no-repeat;
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-position: center;
-  }
-
+  
   &__img {
     max-width: 900px;
     height: auto;
