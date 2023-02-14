@@ -68,10 +68,10 @@ function browsersync() {
 //!SCRIPTS
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.js',//!Jquery Library
-    // 'node_modules/slick-carousel/slick/slick.js',//!Slick-slider
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     // 'node_modules/mixitup/dist/mixitup.js',//!MixitUp
-    'node_modules/@fancyapps/ui/dist/fancybox.umd.js',//!Fancybox-popup
+    'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
     'src/js/jquery-scripts.js',
   ])
     .pipe(plumber({

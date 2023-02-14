@@ -30,3 +30,38 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+
+
+.slick-dots {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots {
+
+  li.slick-active button {
+    font-size: 0px;
+    line-height: 0px;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  li button {
+    font-size: 0px;
+    line-height: 0px;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  li.slick-active button:before {
+    content: url("../images/active-dot.svg");
+  }
+
+  li button::before {
+    content: url("../images/not-active-dot.svg");
+  }
+}

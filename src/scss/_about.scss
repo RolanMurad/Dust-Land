@@ -2,7 +2,7 @@
 .section {
 
   &__about {
-    padding: 150px 0;
+    padding: 150px 0 150px;
     position: relative;
     overflow: hidden;
 
@@ -15,7 +15,7 @@
       top: 400px;
       z-index: -1;
       width: 3000px;
-      height: 2200px;
+      height: 2110px;
     }
 
     &::before {
