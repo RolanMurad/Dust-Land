@@ -31,7 +31,6 @@ body {
   padding: 0 10px;
 }
 
-
 .slick-dots {
   margin-top: 60px;
   display: flex;
@@ -70,4 +69,23 @@ body {
   li button::before {
     content: url("../images/not-active-red.svg");
   }
+}
+
+.faction {
+  .slick-dots {
+    position: absolute;
+    margin-top: 0;
+    bottom: 75px;
+    left: 40%;
+    z-index: 100;
+    z-index: 1;
+  }
+
+  li button::before {
+    content: url("../images/not-active-red.svg");
+  }
+}
+
+.slick-list {
+  z-index: 2;
 }

@@ -1,6 +1,6 @@
 $(function () {
   //  !JQUERY
-  
+
   //!Features-slider
   $('.features__carousel').slick({
     //!Main settings
@@ -23,6 +23,7 @@ $(function () {
     arrows: false,
   });
 
+  //!Animals-slider
   $('.animals__slider').slick({
     //!Main settings
     dots: true,
@@ -32,4 +33,27 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
   });
+
+  //!Faction-slider
+  $('.faction__slider').slick({
+    //!Main settings
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+
+  //!Experience-slider
+  $('.faction__slider').slick({
+    //!Main settings
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+
 })
