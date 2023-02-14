@@ -1,7 +1,7 @@
 // !Hero
 .section {
   &__hero {
-    padding: 180px 0 0;
+    padding: 175px 0 0;
     background: #08090C;
   }
 }
@@ -48,15 +48,15 @@
 }
 
 .hero__bottom {
-  margin-top: 17px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
-  gap: 23px;
+  gap: 10px;
 
   &-socials {
     display: flex;
-    gap: 20px;
-    padding: 38px 42px 38px 38px;
+    gap: 17px;
+    padding: 40px 43px 38px 30px;
     background: url(../images/social-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,10 +70,11 @@
     line-height: 43px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-right: 27px;
   }
 
   &-registr {
-    padding: 37px 98px;
+    padding: 35px 98px 40px;
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;
@@ -88,7 +89,7 @@
   }
 
   &-date {
-    padding: 40px 98px;
+    padding: 40px 85px 50px 70px;
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;

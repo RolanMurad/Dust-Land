@@ -1,7 +1,7 @@
 $(function () {
   //  !JQUERY
   
-  //!Slick-slider
+  //!Features-slider
   $('.features__carousel').slick({
     //!Main settings
     dots: true,
@@ -12,8 +12,18 @@ $(function () {
     arrows: false,
   });
 
-  //!Slick-slider
+  //!Weapons-slider
   $('.weapons__slider').slick({
+    //!Main settings
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+
+  $('.animals__slider').slick({
     //!Main settings
     dots: true,
     autoplay: true,

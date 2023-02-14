@@ -1264,7 +1264,7 @@ body {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1900px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -1492,7 +1492,7 @@ body {
 }
 
 .section__hero {
-  padding: 180px 0 0;
+  padding: 175px 0 0;
   background: #08090c;
 }
 
@@ -1542,22 +1542,22 @@ body {
 }
 
 .hero__bottom {
-  margin-top: 17px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 23px;
+  gap: 10px;
 }
 
 .hero__bottom-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
-  padding: 38px 42px 38px 38px;
+  gap: 17px;
+  padding: 40px 43px 38px 30px;
   background: url(../images/social-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1571,10 +1571,11 @@ body {
   line-height: 43px;
   text-transform: uppercase;
   color: #fff;
+  margin-right: 27px;
 }
 
 .hero__bottom-registr {
-  padding: 37px 98px;
+  padding: 35px 98px 40px;
   font-family: "Syne";
   font-style: normal;
   font-weight: 700;
@@ -1589,7 +1590,7 @@ body {
 }
 
 .hero__bottom-date {
-  padding: 40px 98px;
+  padding: 40px 85px 50px 70px;
   font-family: "Syne";
   font-style: normal;
   font-weight: 700;
@@ -1640,6 +1641,7 @@ body {
 .game__container {
   max-width: 1320px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .game__item {
@@ -1886,7 +1888,7 @@ body {
 .section__features::after {
   content: "";
   position: absolute;
-  background: url(../images/feature-bg.jpg);
+  background: url(../images/section-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1907,11 +1909,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #f7f7f7;
-}
-
-.features__container {
-  max-width: 1320px;
-  padding: 0 10px;
 }
 
 .features__carousel-item {
@@ -1970,7 +1967,7 @@ body {
 
 .section__weapons {
   padding: 250px 0 75px;
-  background: url(../images/weapon-bg.jpg);
+  background: url(../images/red-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2030,6 +2027,65 @@ body {
   max-width: 100%;
   height: auto;
   width: 100%;
+}
+
+.section__animals {
+  padding: 150px 0 75px;
+  background: url(../images/section-bg.jpg);
+}
+
+.animals__container {
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.animals__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.animals__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.animals__info {
+  max-width: 550px;
+}
+
+.animals__title {
+  margin-bottom: 20px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: right;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 100px rgba(255,255,255,.4);
+  color: #fff;
+}
+
+.animals__title span {
+  color: #ff8126;
+}
+
+.animals__descr {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 0px 100px rgba(255,255,255,.4);
 }
 
 @media all and (min-width: 1024px) {
