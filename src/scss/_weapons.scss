@@ -1,0 +1,65 @@
+// !Weaopns
+.section {
+  &__weapons {
+    padding: 250px 0 75px;
+    background: url(../images/weapon-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.weapons {
+  &__slider {}
+
+  &__slider-wrapper {}
+
+  &__slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after{
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: url(../images/red-grid.png);
+      z-index: -1;
+    }
+  }
+
+  &__slider-info {
+    max-width: 660px;
+  }
+
+  &__slider-title {
+    margin-bottom: 20px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 100px rgba(255, 255, 255, 0.4);
+    color: #FFFFFF;
+
+    span {
+      color: #FF5D3D;
+    }
+  }
+
+  &__slider-descr {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 100px rgba(255, 255, 255, 0.4);
+  }
+
+  &__slider-img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+}

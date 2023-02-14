@@ -1306,6 +1306,10 @@ body {
   content: url("../images/not-active-dot.svg");
 }
 
+.weapons li button::before {
+  content: url("../images/not-active-red.svg");
+}
+
 .header {
   padding: 24px 0 24px;
   background-color: #08090c;
@@ -1910,10 +1914,6 @@ body {
   padding: 0 10px;
 }
 
-.features__carousel {
-  margin-bottom: 100px;
-}
-
 .features__carousel-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1966,6 +1966,70 @@ body {
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0px 0px 100px rgba(255,255,255,.4);
+}
+
+.section__weapons {
+  padding: 250px 0 75px;
+  background: url(../images/weapon-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.weapons__slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.weapons__slider-item::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: url(../images/red-grid.png);
+  z-index: -1;
+}
+
+.weapons__slider-info {
+  max-width: 660px;
+}
+
+.weapons__slider-title {
+  margin-bottom: 20px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 100px rgba(255,255,255,.4);
+  color: #fff;
+}
+
+.weapons__slider-title span {
+  color: #ff5d3d;
+}
+
+.weapons__slider-descr {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 0px 100px rgba(255,255,255,.4);
+}
+
+.weapons__slider-img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 @media all and (min-width: 1024px) {

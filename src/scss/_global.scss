@@ -65,3 +65,9 @@ body {
     content: url("../images/not-active-dot.svg");
   }
 }
+
+.weapons {
+  li button::before {
+    content: url("../images/not-active-red.svg");
+  }
+}
