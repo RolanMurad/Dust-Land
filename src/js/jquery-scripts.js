@@ -56,4 +56,8 @@ $(function () {
     arrows: false,
   });
 
+  // !Append to
+  if ($(window).width() < 1110) {
+    $('.hero__bottom-socials').appendTo($('.navbar'));
+  };
 })

@@ -1,17 +1,24 @@
 // !Hero
 .section {
   &__hero {
-    padding: 175px 0 0;
     background: #08090C;
   }
 }
 
 .hero {
-  &__title {
+  &__wrapper {
+    height: calc(100vh - 200px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 250px;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     span {
       font-family: 'Syne';
@@ -103,4 +110,3 @@
     background-size: cover;
   }
 }
-
