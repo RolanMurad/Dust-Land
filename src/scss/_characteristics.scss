@@ -1,0 +1,33 @@
+// !Characteristics
+.section {
+  &__characteristics {
+    padding: 105px 0;
+    background: #08090C;
+  }
+}
+
+.characteristics {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    max-width: 600px;
+  }
+
+  &__item {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 220%;
+    text-transform: uppercase;
+    color: #fff;
+
+    span {
+      color: #808692;
+    }
+  }
+}

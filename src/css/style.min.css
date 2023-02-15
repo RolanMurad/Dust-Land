@@ -2485,6 +2485,43 @@ body {
   bottom: 0;
 }
 
+.section__characteristics {
+  padding: 105px 0;
+  background: #08090c;
+}
+
+.characteristics {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.characteristics__list {
+  max-width: 600px;
+}
+
+.characteristics__item {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 220%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.characteristics__item span {
+  color: #808692;
+}
+
 @media all and (min-width: 1024px) {
   .fancybox__container {
     --carousel-button-width: 48px;
