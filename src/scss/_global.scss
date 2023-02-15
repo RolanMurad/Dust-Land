@@ -90,7 +90,6 @@ body {
   z-index: 2;
 }
 
-
 .registr{
   padding: 12px 68px;
   display: inline-block;
@@ -107,4 +106,9 @@ body {
   flex-direction: column;
   align-items: center;
   background-position: center;
+}
+
+.social__list {
+  display: flex;
+  gap: 10px;
 }

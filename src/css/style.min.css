@@ -1352,6 +1352,13 @@ body {
   background-position: center;
 }
 
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
 .header {
   padding: 24px 0 24px;
   background-color: #08090c;
@@ -1644,13 +1651,6 @@ body {
   background: url(../images/date-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.hero__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
 }
 
 .section__game {
@@ -2576,6 +2576,75 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer {
+  padding: 150px 0 100px;
+  margin-top: -40px;
+  background: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.footer__social {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer__nav {
+  margin-bottom: 30px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footer__list-item {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__rules {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 1100px;
+}
+
+.footer__copy {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
   text-transform: uppercase;
   color: #fff;
 }
