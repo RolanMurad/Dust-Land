@@ -2397,6 +2397,94 @@ body {
   color: #fff;
 }
 
+.section__beta {
+  position: relative;
+  padding: 150px 0;
+  background: url(../images/beta-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.beta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 62px;
+}
+
+.beta__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.beta__box {
+  max-width: 660px;
+}
+
+.beta__box-title {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 67.3064px;
+  line-height: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.beta__box-subtitle {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 92.5%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 0px 101.541px rgba(255,255,255,.4);
+  margin-bottom: 50px;
+}
+
+.beta__box-date {
+  margin-bottom: 20px;
+  padding: 36px 34px;
+  background: url(../images/beta__date-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.beta__box-prizes {
+  margin-bottom: 50px;
+  background: url(../images/beta__text-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.beta__img-hero {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  left: 50px;
+  bottom: 0;
+}
+
 @media all and (min-width: 1024px) {
   .fancybox__container {
     --carousel-button-width: 48px;

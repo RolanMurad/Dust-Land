@@ -1,0 +1,90 @@
+// !Beta
+.section {
+  &__beta {
+    position: relative;
+    padding: 150px 0;
+    background: url(../images/beta-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.beta {
+  display: flex;
+  gap: 62px;
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__box {
+    max-width: 660px;
+  }
+
+  &__box-title {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 67.3064px;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__box-subtitle {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 92.5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 101.541px rgba(255, 255, 255, 0.4);
+    margin-bottom: 50px;
+  }
+
+  &__box-date {
+    margin-bottom: 20px;
+    padding: 36px 34px;
+    background: url(../images/beta__date-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__box-prizes {
+    margin-bottom: 50px;
+    background: url(../images/beta__text-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__img-hero {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 50px;
+    bottom: 0;
+  }
+}
+
+// .registr {}
