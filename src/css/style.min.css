@@ -1883,6 +1883,7 @@ body {
 }
 
 .about__title {
+  margin: 0 auto;
   margin-bottom: 50px;
   font-family: "Syne";
   font-style: normal;
@@ -1947,6 +1948,7 @@ body {
   font-size: 40px;
   line-height: 48px;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
 }
 
@@ -2772,6 +2774,33 @@ body {
     width: 60%;
     height: 100%;
   }
+
+  .features__carousel-item {
+    max-width: 100%;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .features__carousel-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .features__carousel-img {
+    width: 70%;
+  }
+
+  .features__carousel-info {
+    max-width: 70%;
+  }
+
+  .features__carousel-title {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -2792,6 +2821,33 @@ body {
 
   .hero__bottom-date {
     padding: 40px 0 50px;
+  }
+
+  .about {
+    width: 75%;
+  }
+
+  .about__text {
+    max-width: 100%;
+    padding: 80px 26px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+    background-position: center center;
+  }
+
+  .about__text-join {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    padding: 20px 20px 12px;
+    background-position: center center;
+  }
+
+  .about__video-link {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -2840,6 +2896,13 @@ body {
 
   .game__item {
     max-width: 85%;
+  }
+
+  .about__title {
+    max-width: 100%;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 90%;
   }
 }
 
@@ -2968,6 +3031,61 @@ body {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
+
+  .features__carousel-img {
+    width: 100%;
+  }
+
+  .features__carousel-item {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+  }
+
+  .features__carousel-title {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 860px) {
+  .about__title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 90%;
+    margin-bottom: 10px;
+  }
+
+  .features__title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 90%;
+    margin-bottom: 0;
+  }
+
+  .section__about {
+    padding: 100px 0 50px;
+    width: 100%;
+  }
+
+  .section__features {
+    padding-top: 100px;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .features__carousel-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 100%;
+  }
+
+  .features__carousel-descr {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2987,10 +3105,6 @@ body {
     font-size: 70px;
   }
 
-  .game__item-title span {
-    font-size: 85px;
-  }
-
   .game__item {
     max-width: 100%;
   }
@@ -2998,11 +3112,6 @@ body {
   .game__item-title {
     font-weight: 800;
     font-size: 48px;
-    line-height: 90%;
-  }
-
-  .game__item-title span {
-    font-size: 42px;
     line-height: 90%;
   }
 }
@@ -3053,9 +3162,25 @@ body {
     height: 77px;
     right: 0;
   }
+
+  .features__title {
+    font-size: 34px;
+  }
+
+  .features__carousel-title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+  }
+
+  .features__carousel-descr {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+  }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 540px) {
   .hero__title {
     font-size: 44px;
   }
@@ -3152,18 +3277,40 @@ body {
 
   .game__item-title {
     font-weight: 800;
-    font-size: 56px;
-    line-height: 90%;
-  }
-
-  .game__item-title span {
-    font-weight: 800;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 90%;
   }
 
   .section__game {
     padding-top: 40px;
+  }
+
+  .section__about {
+    padding: 20px 0 40px;
+  }
+
+  .about__text-join {
+    padding: 32px 20px 14px;
+    font-weight: 700;
+    font-size: 9.78788px;
+    line-height: 12px;
+  }
+
+  .about__text {
+    padding: 24px 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+  }
+
+  .about__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 90%;
+  }
+
+  .section__features {
+    padding: 60px 0 0px;
   }
 }
 
@@ -3222,5 +3369,46 @@ body {
 
   .hero__wrapper {
     height: calc(100vh - 170px);
+  }
+
+  .about__text {
+    padding: 24px 0;
+  }
+
+  .game__item-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 90%;
+  }
+
+  .game__item-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .features__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 90%;
+  }
+
+  .features__carousel-info {
+    margin-top: 70px;
+  }
+
+  .features__carousel-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .features__carousel-descr {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .features__carousel-item {
+    gap: 10px;
   }
 }
