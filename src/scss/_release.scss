@@ -1,7 +1,7 @@
 // !Release
 .section {
   &__release {
-    padding: 225px 0 230px;
+    // padding: 225px 0 230px;
     background: url(../images/release.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,10 +10,12 @@
 }
 
 .release {
+  min-height: 100vh;
   max-width: 720px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   &__title {

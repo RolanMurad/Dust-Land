@@ -2313,7 +2313,7 @@ body {
 
 .section__immerse {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../images/immerse-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -2642,7 +2642,6 @@ body {
 }
 
 .section__release {
-  padding: 225px 0 230px;
   background: url(../images/release.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -2650,6 +2649,7 @@ body {
 }
 
 .release {
+  min-height: 100vh;
   max-width: 720px;
   margin: 0 auto;
   display: -webkit-box;
@@ -2659,6 +2659,9 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -3417,6 +3420,14 @@ body {
   .beta__box {
     max-width: 100%;
   }
+
+  .release {
+    min-height: 60vh;
+  }
+
+  .section__immerse {
+    min-height: 90vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3469,6 +3480,12 @@ body {
 
   .beta__box-subtitle {
     font-size: 32px;
+  }
+
+  .release__title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 90%;
   }
 }
 
@@ -3524,6 +3541,14 @@ body {
 
   .section__characteristics {
     padding: 30px 0;
+  }
+
+  .release__link {
+    font-size: 32px;
+    padding: 4px 36px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -3663,6 +3688,12 @@ body {
 
   .beta__box-prizes {
     font-size: 22px;
+  }
+
+  .release__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
@@ -3886,6 +3917,17 @@ body {
     font-size: 19px;
     line-height: 150%;
   }
+
+  .release__title {
+    font-size: 36px;
+  }
+
+  .release__subtitle {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 160%;
+  }
 }
 
 @media (max-width: 390px) {
@@ -3895,6 +3937,10 @@ body {
 
   .beta__box-subtitle {
     font-size: 26px;
+  }
+
+  .release__title {
+    font-size: 28px;
   }
 }
 
