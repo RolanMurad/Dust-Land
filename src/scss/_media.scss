@@ -117,6 +117,36 @@
   .section__immerse::after {
     top: 15vh;
   }
+
+  .beta {
+    flex-direction: column-reverse;
+  }
+
+  .beta__box {
+    max-width: 75%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .beta__box-prizes {
+    padding: 7vh 5.5vw;
+  }
+
+  .section__beta {
+    padding-bottom: 0;
+  }
+
+  .beta__img-hero {
+    left: 50%;
+    transform: translate(-50%);
+    width: 63%;
+    height: auto;
+  }
+
+  .beta__box-date {
+    text-align: center;
+    padding: 7vh 15vw;
+  }
 }
 
 @media (max-width:1400px) {
@@ -239,6 +269,10 @@
     font-weight: 800;
     font-size: 46px;
     line-height: 90%;
+  }
+
+  .beta__box-prizes {
+    padding: 5vh 15vw;
   }
 }
 
@@ -396,6 +430,14 @@
     padding: 30px 10px;
     font-size: 42px;
   }
+
+  .beta__box-title {
+    font-size: 52px;
+  }
+
+  .beta__box-subtitle {
+    font-size: 42px;
+  }
 }
 
 
@@ -497,6 +539,13 @@
     line-height: 140%;
   }
 
+  .section__beta {
+    padding-top: 100px;
+  }
+
+  .beta__box {
+    max-width: 100%;
+  }
 }
 
 @media(max-width:768px) {
@@ -538,6 +587,18 @@
     font-size: 34px;
     line-height: 90%;
   }
+
+  .beta__box-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .beta__box-title {
+    font-size: 42px;
+  }
+
+  .beta__box-subtitle {
+    font-size: 32px;
+  }
 }
 
 @media(max-width:660px) {
@@ -568,6 +629,18 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
+  }
+
+  .beta__box-prizes {
+    padding: 3vh 15vw;
+    font-size: 27px;
+    line-height: 31px;
+  }
+
+  .beta__box-date {
+    padding: 3vh 15vw;
+    font-size: 23px;
+    line-height: 29px;
   }
 }
 
@@ -687,6 +760,18 @@
 
   .requirements__list-min>li {
     padding: 10px;
+  }
+
+  .section__beta {
+    padding-top: 25px;
+  }
+
+  .beta__box-date {
+    font-size: 22px;
+  }
+
+  .beta__box-prizes {
+    font-size: 22px;
   }
 }
 
@@ -876,6 +961,48 @@
     padding: 20px 10px;
     font-size: 22px;
   }
+
+  .beta__box-prizes {
+    padding: 2vh 15vw;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .beta__box-date {
+    padding: 2vh 15vw;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .beta__box-title {
+    font-size: 36px;
+  }
+
+  .beta__box-link {
+    border-radius: 20px;
+    padding: 5px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .beta{
+    gap: 25px;
+  }
+
+  .beta__box-prizes{
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width:390px) {
+  .beta__box-title {
+    font-size: 32px;
+  }
+
+  .beta__box-subtitle {
+    font-size: 26px;
+  }
 }
 
 @media(max-width:375px) {
@@ -1022,5 +1149,23 @@
 @media(max-width:320px) {
   .section__immerse::after {
     top: -2vh;
+  }
+
+  .beta__box-title{
+    font-size: 26px;
+  }
+
+  .beta__box-subtitle{
+    font-size: 24px;
+  }
+
+  .beta__box-date{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .beta__box-prizes{
+    font-size: 12px;
+    line-height: 17px;
   }
 }

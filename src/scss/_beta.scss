@@ -21,6 +21,9 @@
 
   &__box {
     max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__box-title {
@@ -28,7 +31,7 @@
     font-style: normal;
     font-weight: 800;
     font-size: 67.3064px;
-    line-height: 90%;
+    line-height: 120%;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -84,5 +87,16 @@
     height: auto;
     left: 50px;
     bottom: 0;
+  }
+
+  &__box-link {
+    padding: 12px 120px;
+    align-self: center;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      box-shadow: (0px 4px 100px #9E3DFF);
+      color: #9E3DFF;
+    }
   }
 }
