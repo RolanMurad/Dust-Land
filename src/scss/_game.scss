@@ -8,7 +8,6 @@
   }
 }
 
-
 .game {
   display: flex;
   align-items: center;
@@ -32,6 +31,7 @@
 
   &__item {
     max-width: 650px;
+    position: relative;
   }
 
   &__item-text {
@@ -131,9 +131,23 @@
       height: 123px;
     }
   }
-  
+
   &__img {
     max-width: 900px;
     height: auto;
+  }
+
+  &__item-link {
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -50px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: #9E3DFF;
+      box-shadow: (0px 4px 100px #9E3DFF);
+    }
   }
 }

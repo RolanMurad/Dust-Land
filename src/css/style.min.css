@@ -1329,9 +1329,11 @@ body {
 
 .registr {
   padding: 12px 68px;
+  text-align: center;
   display: inline-block;
   background: url(../images/award-bg.svg);
   background-repeat: no-repeat;
+  background-position: center;
   font-family: "Syne";
   font-style: normal;
   font-weight: 700;
@@ -1339,17 +1341,6 @@ body {
   line-height: 38px;
   text-transform: uppercase;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-position: center;
 }
 
 .social__list {
@@ -1730,6 +1721,7 @@ body {
 
 .game__item {
   max-width: 650px;
+  position: relative;
 }
 
 .game__item-text {
@@ -1837,6 +1829,25 @@ body {
 .game__img {
   max-width: 900px;
   height: auto;
+}
+
+.game__item-link {
+  position: absolute;
+  white-space: nowrap;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  bottom: -50px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.game__item-link:hover {
+  color: #9e3dff;
+  -webkit-box-shadow: 0px 4px 100px #9e3dff;
+  box-shadow: 0px 4px 100px #9e3dff;
 }
 
 .section__about {
@@ -2751,6 +2762,18 @@ body {
   }
 }
 
+@media (max-width: 1670px) {
+  .game__container {
+    max-width: 100%;
+  }
+
+  .game__img-hero {
+    right: -10%;
+    width: 60%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 1400px) {
   .header__container {
     gap: 0;
@@ -2790,6 +2813,33 @@ body {
   .nav__list-item a {
     padding-right: 31px;
     padding-left: 5px;
+  }
+
+  .game {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .game__img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .game__img-hero {
+    right: 0;
+    width: auto;
+    height: auto;
+    bottom: 0;
+  }
+
+  .section__game {
+    padding-bottom: 0;
+  }
+
+  .game__item {
+    max-width: 85%;
   }
 }
 
@@ -2932,6 +2982,29 @@ body {
   .hero__bottom {
     margin-top: 5px;
   }
+
+  .game__item-title {
+    font-size: 70px;
+  }
+
+  .game__item-title span {
+    font-size: 85px;
+  }
+
+  .game__item {
+    max-width: 100%;
+  }
+
+  .game__item-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 90%;
+  }
+
+  .game__item-title span {
+    font-size: 42px;
+    line-height: 90%;
+  }
 }
 
 @media (max-width: 660px) {
@@ -2942,11 +3015,43 @@ body {
   .hero__bottom-date {
     padding: 30px 0;
   }
+
+  .game__item-award p {
+    max-width: 400px;
+  }
+
+  .game__item-award::after {
+    top: unset;
+    bottom: 0;
+  }
 }
 
 @media (max-width: 640px) {
   .fancybox__toolbar__items--center:not(:last-child) {
     display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .game__item-descr {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .game__item-award {
+    padding: 20px;
+  }
+
+  .game__item-award p {
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .game__item-award::after {
+    width: 100px;
+    height: 77px;
+    right: 0;
   }
 }
 
@@ -3009,6 +3114,56 @@ body {
 
   .nav__list-item:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  .game__item-award p {
+    max-width: 200px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .game__item-link {
+    border-radius: 20px;
+    padding: 5px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .game__item-descr {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+
+  .game__item-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  .game__item-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  .game__item-title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 90%;
+  }
+
+  .game__item-title span {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 90%;
+  }
+
+  .section__game {
+    padding-top: 40px;
   }
 }
 
