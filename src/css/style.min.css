@@ -2837,6 +2837,23 @@ body {
   .animals__descr {
     text-align: center;
   }
+
+  .faction__slider-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .faction__slider-info {
+    max-width: 70%;
+    text-align: center;
+    right: 0;
+  }
+
+  .faction__slider-img {
+    width: 70%;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -3089,6 +3106,14 @@ body {
   .weapons__slider-info {
     max-width: 100%;
   }
+
+  .faction__slider-info {
+    max-width: 100%;
+  }
+
+  .faction__slider-img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 860px) {
@@ -3155,6 +3180,22 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 140%;
+  }
+
+  .faction__slider-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 100%;
+  }
+
+  .faction__slider-descr {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .section__faction {
+    padding-top: 100px;
   }
 }
 
@@ -3263,6 +3304,22 @@ body {
 
   .section__weapons {
     padding-top: 75px;
+  }
+
+  .faction__slider-title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+  }
+
+  .faction__slider-descr {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .section__faction {
+    padding: 30px 0 0;
   }
 }
 
@@ -3534,5 +3591,21 @@ body {
 
   .animals__title {
     font-size: 37px;
+  }
+
+  .faction__slider-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .faction__slider-title {
+    margin-bottom: 8px;
+  }
+
+  .faction__slider-descr {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
   }
 }
