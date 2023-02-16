@@ -2733,12 +2733,28 @@ body {
 
 .footer__list-item {
   font-family: "Syne";
+  position: relative;
+}
+
+.footer__list-item:not(:last-child)::after {
+  content: "|";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -5px;
+}
+
+.footer__list-link {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 110%;
   text-transform: uppercase;
   color: #fff;
+  padding: 10px;
 }
 
 .footer__rules {
@@ -3112,6 +3128,24 @@ body {
   .beta__box-prizes {
     padding: 5vh 15vw;
   }
+
+  .footer__social.social__list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__list-item:not(:last-child)::after {
+    display: none;
+  }
 }
 
 @media (max-width: 1110px) {
@@ -3313,6 +3347,10 @@ body {
   .characteristics__list {
     margin-left: 50px;
   }
+
+  .footer__copy {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -3486,6 +3524,10 @@ body {
     font-weight: 800;
     font-size: 48px;
     line-height: 90%;
+  }
+
+  .footer {
+    padding: 50px 0;
   }
 }
 
@@ -3694,6 +3736,20 @@ body {
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer__social {
+    margin-bottom: 20px;
+  }
+
+  .footer__list-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 

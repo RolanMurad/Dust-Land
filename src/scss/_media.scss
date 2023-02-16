@@ -274,6 +274,19 @@
   .beta__box-prizes {
     padding: 5vh 15vw;
   }
+
+  .footer__social.social__list {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer__list {
+    flex-direction: column;
+  }
+
+  .footer__list-item:not(:last-child)::after {
+    display: none;
+  }
 }
 
 @media(max-width:1110px) {
@@ -446,6 +459,10 @@
 
   .characteristics__list {
     margin-left: 50px;
+  }
+
+  .footer__copy {
+    font-size: 16px;
   }
 }
 
@@ -621,6 +638,10 @@
     font-weight: 800;
     font-size: 48px;
     line-height: 90%;
+  }
+
+  .footer {
+    padding: 50px 0;
   }
 }
 
@@ -823,6 +844,20 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer__social {
+    margin-bottom: 20px;
+  }
+
+  .footer__list-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 

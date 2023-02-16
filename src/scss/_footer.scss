@@ -23,13 +23,35 @@
 
   &__list-item {
     font-family: 'Syne';
+    position: relative;
+  }
+
+  &__list-item:not(:last-child)::after {
+    content: "|";
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5px;
+  }
+
+  &__list-link {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 110%;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 10px;
   }
+
+  // &__list-link:last-child::after {
+  //   content: "|";
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   right: -5px;
+  // }
 
   &__rules {
     margin: 0 auto;
