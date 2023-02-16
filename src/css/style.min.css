@@ -2312,17 +2312,54 @@ body {
 }
 
 .section__immerse {
-  padding: 580px 0 130px;
-  background: url(../images/immerse-bg.jpg);
+  position: relative;
+  height: 100vh;
+  background: url(../images/immerse-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  z-index: -2;
+}
+
+.section__immerse::after {
+  content: "IMMERSE";
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19vw;
+  line-height: 434px;
+  z-index: -1;
+}
+
+.section__immerse::before {
+  content: "";
+  position: absolute;
+  top: 43vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/immerse-bg-b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2;
 }
 
 .immerse__text {
-  max-width: 1075px;
-  margin-bottom: 50px !important;
-  margin: 0 auto;
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  bottom: 10%;
   padding: 60px 70px;
   background: rgba(0,0,0,.8);
   -webkit-backdrop-filter: blur(25px);
@@ -2335,6 +2372,7 @@ body {
   line-height: 110%;
   text-align: center;
   color: #fff;
+  z-index: 4;
 }
 
 .section__requirements {
@@ -2869,6 +2907,10 @@ body {
   .experience__carousel-info {
     max-width: 70%;
   }
+
+  .section__immerse::after {
+    top: 15vh;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -2971,6 +3013,10 @@ body {
     font-weight: 800;
     font-size: 54px;
     line-height: 90%;
+  }
+
+  .section__immerse::after {
+    top: 17vh;
   }
 }
 
@@ -3142,6 +3188,15 @@ body {
   .experience__carousel-img {
     width: 100%;
   }
+
+  .section__immerse::after {
+    top: 20vh;
+  }
+
+  .immerse__text {
+    padding: 30px 10px;
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -3268,6 +3323,13 @@ body {
     font-weight: 800;
     font-size: 48px;
     line-height: 90%;
+  }
+
+  .immerse__text {
+    padding: 30px 10px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
   }
 }
 
@@ -3554,6 +3616,11 @@ body {
     font-size: 14px;
     line-height: 140%;
   }
+
+  .immerse__text {
+    padding: 20px 10px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -3684,5 +3751,20 @@ body {
 
   .experience__carousel-descr {
     font-size: 12px;
+  }
+
+  .section__immerse::after {
+    top: 11vh;
+  }
+
+  .immerse__text {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section__immerse::after {
+    top: -2vh;
   }
 }

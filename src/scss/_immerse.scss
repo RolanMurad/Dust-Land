@@ -1,19 +1,52 @@
 // !Immerse
 .section {
   &__immerse {
-    padding: 580px 0 130px;
-    background: url(../images/immerse-bg.jpg);
+    position: relative;
+    height: 100vh;
+    background: url(../images/immerse-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    z-index: -2;
+
+    &::after {
+      content: "IMMERSE";
+      color: #FFFFFF;
+      position: absolute;
+      left: 50%;
+      top: 10vh;
+      transform: translate(-50%);
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 19vw;
+      line-height: 434px;
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 43vh;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(../images/immerse-bg-b.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      z-index: 2;
+    }
   }
 }
 
 .immerse {
   &__text {
-    max-width: 1075px;
-    margin-bottom: 50px!important;
-    margin: 0 auto;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10%;
     padding: 60px 70px;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(25px);
@@ -25,5 +58,6 @@
     line-height: 110%;
     text-align: center;
     color: #FFFFFF;
+    z-index: 4;
   }
 }

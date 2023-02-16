@@ -5,7 +5,7 @@ $(function () {
   $('.features__carousel').slick({
     //!Main settings
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -16,7 +16,7 @@ $(function () {
   $('.weapons__slider').slick({
     //!Main settings
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -27,7 +27,7 @@ $(function () {
   $('.animals__slider').slick({
     //!Main settings
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -38,7 +38,7 @@ $(function () {
   $('.faction__slider').slick({
     //!Main settings
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -49,7 +49,7 @@ $(function () {
   $('.experience__carousel').slick({
     //!Main settings
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
