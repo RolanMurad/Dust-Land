@@ -101,6 +101,18 @@
   .faction__slider-img {
     width: 70%;
   }
+
+  .experience__carousel-item {
+    flex-direction: column-reverse;
+  }
+
+  .experience__carousel-img {
+    width: 70%;
+  }
+
+  .experience__carousel-info {
+    max-width: 70%;
+  }
 }
 
 @media (max-width:1400px) {
@@ -333,6 +345,19 @@
   .faction__slider-img {
     width: 100%;
   }
+
+  .experience__carousel-info {
+    margin: 0;
+    width: 100%;
+  }
+
+  .experience__carousel-title {
+    font-size: 48px;
+  }
+
+  .experience__carousel-img {
+    width: 100%;
+  }
 }
 
 
@@ -417,6 +442,22 @@
   .section__faction {
     padding-top: 100px;
   }
+
+  .section__experience {
+    padding-top: 75px;
+  }
+
+  .experience__carousel-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+  }
+
+  .experience__carousel-descr {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+  }
 }
 
 @media(max-width:768px) {
@@ -465,6 +506,16 @@
       top: unset;
       bottom: 0;
     }
+  }
+
+  .experience__carousel-title {
+    font-size: 26px;
+  }
+
+  .experience__carousel-descr {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
   }
 }
 
@@ -709,6 +760,17 @@
   .section__animals {
     padding: 50px 0 0;
   }
+
+  .experience__carousel-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .experience__carousel-descr {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
 @media(max-width:375px) {
@@ -827,5 +889,17 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 140%;
+  }
+
+  .section__experience{
+    padding: 25px 0 0;
+  }
+
+  .experience__carousel-title{
+    font-size: 16px;
+  }
+
+  .experience__carousel-descr{
+    font-size: 12px;
   }
 }
