@@ -438,6 +438,15 @@
   .beta__box-subtitle {
     font-size: 42px;
   }
+
+  .characteristics {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .characteristics__list {
+    margin-left: 50px;
+  }
 }
 
 
@@ -641,6 +650,20 @@
     padding: 3vh 15vw;
     font-size: 23px;
     line-height: 29px;
+  }
+
+  .characteristics__list {
+    margin-left: 0;
+  }
+
+  .characteristics__item {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+  .section__characteristics {
+    padding: 30px 0;
   }
 }
 
@@ -986,12 +1009,18 @@
     line-height: 19px;
   }
 
-  .beta{
+  .beta {
     gap: 25px;
   }
 
-  .beta__box-prizes{
+  .beta__box-prizes {
     margin-bottom: 20px;
+  }
+
+  .characteristics__item {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 150%;
   }
 }
 
@@ -1151,20 +1180,20 @@
     top: -2vh;
   }
 
-  .beta__box-title{
+  .beta__box-title {
     font-size: 26px;
   }
 
-  .beta__box-subtitle{
+  .beta__box-subtitle {
     font-size: 24px;
   }
 
-  .beta__box-date{
+  .beta__box-date {
     font-size: 12px;
     margin-bottom: 10px;
   }
 
-  .beta__box-prizes{
+  .beta__box-prizes {
     font-size: 12px;
     line-height: 17px;
   }

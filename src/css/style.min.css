@@ -3296,6 +3296,20 @@ body {
   .beta__box-subtitle {
     font-size: 42px;
   }
+
+  .characteristics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .characteristics__list {
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -3496,6 +3510,20 @@ body {
     padding: 3vh 15vw;
     font-size: 23px;
     line-height: 29px;
+  }
+
+  .characteristics__list {
+    margin-left: 0;
+  }
+
+  .characteristics__item {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+  .section__characteristics {
+    padding: 30px 0;
   }
 }
 
@@ -3851,6 +3879,12 @@ body {
 
   .beta__box-prizes {
     margin-bottom: 20px;
+  }
+
+  .characteristics__item {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 150%;
   }
 }
 
