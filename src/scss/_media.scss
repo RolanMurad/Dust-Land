@@ -71,6 +71,22 @@
   .weapons__slider-info {
     max-width: 70%;
   }
+
+  .animals__item {
+    flex-direction: column-reverse;
+  }
+
+  .animals__info {
+    max-width: 100%;
+  }
+
+  .animals__title {
+    text-align: center;
+  }
+
+  .animals__descr {
+    text-align: center;
+  }
 }
 
 @media (max-width:1400px) {
@@ -353,6 +369,16 @@
   .section__weapons {
     padding-top: 100px;
   }
+
+  .section__animals {
+    padding-top: 100px;
+  }
+
+  .animals__descr {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+  }
 }
 
 @media(max-width:768px) {
@@ -612,6 +638,23 @@
     font-size: 14px;
     line-height: 140%;
   }
+
+  .animals__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 100%;
+    margin-bottom: 8px;
+  }
+
+  .animals__descr {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .section__animals {
+    padding: 50px 0 0;
+  }
 }
 
 @media(max-width:375px) {
@@ -710,5 +753,9 @@
 
   .features__carousel-item {
     gap: 10px;
+  }
+
+  .animals__title {
+    font-size: 37px;
   }
 }
