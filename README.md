@@ -1,4 +1,4 @@
-# **DustLand** 💀
+# **DustLand** 🎮
 Responsive and **adaptive** website for **third-person looter-shooter**.
 
 **What's inside?** :mag_right:
