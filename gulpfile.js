@@ -1,19 +1,17 @@
 // !GLOBAL VARS
 const { src, dest, watch, parallel, series } = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
-const concat = require('gulp-concat');    
+const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer'); 
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 const del = require('del');
-// const imagewebp = require('gulp-webp');
-const fileinclude = require('gulp-file-include'); 
-const plumber = require('gulp-plumber'); 
-const notify = require('gulp-notify'); 
+const fileinclude = require('gulp-file-include');
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 const gcmq = require('gulp-group-css-media-queries');
-// const webpHTML = require('gulp-webp-html');
 
 
 //!Html INCLUDE
@@ -26,7 +24,6 @@ function html() {
       }))
     }))
     .pipe(fileinclude())
-    // .pipe(webpHTML())
     .pipe(dest('dist/')) 
     .pipe(browserSync.stream())
 }
@@ -70,7 +67,6 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
-    // 'node_modules/mixitup/dist/mixitup.js',//!MixitUp
     'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
     'src/js/jquery-scripts.js',
   ])
@@ -97,7 +93,6 @@ function images() {
       }))
     }))
     .pipe(newer('dist/images'))
-    // .pipe(imagewebp())
     .pipe(dest('dist/images'))
     .pipe(src('src/images/**/*'))
     .pipe(newer('dist/images'))
@@ -129,7 +124,9 @@ function build() {
   return src([
     'src/css/style.min.css',
     'src/fonts/**/*',
-    'src/js/main.min.js',
+    'src/js/jquery-scripts.js',
+    'src/js/jquery.min.js',
+    'src/js/vanila.js',
     'src/html/**/*.html',
   ], { base: 'src' })
     .pipe(dest('dist'))

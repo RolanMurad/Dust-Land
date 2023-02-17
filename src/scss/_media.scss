@@ -139,13 +139,24 @@
   .beta__img-hero {
     left: 50%;
     transform: translate(-50%);
-    width: 63%;
+    width: 58%;
     height: auto;
   }
 
   .beta__box-date {
     text-align: center;
     padding: 7vh 15vw;
+  }
+
+  .game__item-award {
+    p {
+      max-width: 400px;
+    }
+  }
+
+  .game__item-award::after {
+    top: unset;
+    bottom: 0;
   }
 }
 
@@ -859,6 +870,10 @@
     font-size: 16px;
     line-height: 150%;
   }
+
+  .beta {
+    gap: 25px;
+  }
 }
 
 
@@ -1070,10 +1085,6 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-  }
-
-  .beta {
-    gap: 25px;
   }
 
   .beta__box-prizes {
