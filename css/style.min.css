@@ -38,6 +38,15 @@ ul[class] {
   list-style: none;
 }
 
+.element-invisible {
+  position: absolute;
+  top: -999999em;
+  left: auto;
+  width: 1px;
+  height: 1px;
+  overflow:hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
